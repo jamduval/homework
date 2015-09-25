@@ -8,8 +8,8 @@ _quantity_ represents how many of each _item name_ was ordered. _item_name_ is t
 item that was ordered from the menu. _choice_description_ is a list of lists that represents each of the optional 
 choices that the customer chose in reference to their selected _item_name_; and this list is set up
 as [[list of salsas],[list of other toppings]]. _item_price_ is 
-the cost of the _quantity_ and _item_name_ combo.
-    * Each row represents an item ordered by a customer, where customers can order multiple items.    
+the cost of the _quantity_ and _item_name_ combo. Each row represents an item ordered by a customer, where 
+customers can order multiple items.    
   * __How many orders do there appear to be?__
     * There appear to be 1834 orders.
   * __How many lines are in the file?__
