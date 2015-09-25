@@ -1,8 +1,7 @@
 ## Homework Assignment - Week 1
 
 1. _Using_ chipotle.tsv _in the_ data _subdirectory:_
-  * __Look at the head and the tail, and think for a minute about how the data is structured. 
-What do you think each column means? What do you think each row means? Tell me!__       
+  * __Look at the head and the tail, and think for a minute about how the data is structured. What do you think each column means? What do you think each row means? Tell me!__       
     * _order_id_ is a specific customer order identifier, so one customer can order multiple items.
 _quantity_ represents how many of each _item name_ was ordered. _item_name_ is the specific
 item that was ordered from the menu. _choice_description_ is a list of lists that represents each of the optional 
