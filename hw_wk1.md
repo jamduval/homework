@@ -1,5 +1,7 @@
 ## Homework Assignment - Week 1
 
+### James Duvall
+
 1. _Using_ chipotle.tsv _in the_ data _subdirectory:_
   * __Look at the head and the tail, and think for a minute about how the data is structured. 
 What do you think each column means? What do you think each row means? Tell me!__       
