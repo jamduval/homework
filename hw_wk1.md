@@ -12,13 +12,13 @@ as [[list of salsas],[list of other toppings]]. _item_price_ is
 the cost of the _quantity_ and _item_name_ combo. Each row represents an item ordered by a customer, where 
 customers can order multiple items.    
   * __How many orders do there appear to be?__
-    * There appear to be 1834 orders. Enter _$ cat chipotle.tsv_ into the bash command line to view the files and see that the last order number is 1834.
+    * There appear to be 1834 orders. Enter _$ cat chipotle.tsv_ into the bash command line to view the file and see that the last order number is 1834.
   * __How many lines are in the file?__
     * There are 4623 lines in the file. Use _$ wc -l chipotle.tsv_.
   * __Which burrito is more popular, steak or chicken?__
-    * __Chicken__ is more popular. _$ grep "Chicken Burrito" chipotle.tsv > chicken.tsv $ wc -l chicken.tsv (produces 553 lines) $ grep "Steak Burrito" chipotle.tsv > steak.tsv $ wc -l steak.tsv (produces 368 lines)_ A quick scroll through the steak file then shows that the quantity variable is not equal to 2 more than half of the time, which thus implies the Chicken burrito is more popular.
+    * __Chicken__ is more popular. _$ grep "Chicken Burrito" chipotle.tsv | wc -l_ results in 553 while _$grep "Steak Burrito" chipotle.tsv | wc -l_ results in 368.
   * __Do chicken burritos more often have black beans or pinto beans?__
-    * Chicken burritos more often have __black beans__. _$ grep "Black Beans" chicken.tsv_ produces more lines than _$ grep "Pinto Beans" chicken.tsv_.
+    * Chicken burritos more often have __black beans__. _$ grep "Chicken Burrito" chipotle.tsv | grep "Black Beans" | wc -l_ results in 282 while _$ grep "Chicken Burrito" chipotle.tsv | grep "Pinto Beans" | wc -l_ results in 105.
 
 2. _Count the number of occurrences of the word 'dictionary' (regardless of case) across all files in the DAT9 repo._
   * I entered the following into Git:
